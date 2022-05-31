@@ -2,7 +2,7 @@
 
 ![oscillofun](https://user-images.githubusercontent.com/11475352/171068920-49ae4dd9-65b4-4312-9c7a-8a44632daf3b.gif)
 
-Nanoscope is a fully-featured cross-platform UI that turns your $5 Arduino Nano into a capable Oscilloscope. You can see a demo of Nanoscope running Oscillofun [here]([url](https://youtu.be/ZQVlYfUenzs)).
+Nanoscope is a fully-featured cross-platform UI that turns your $5 Arduino Nano into a capable Oscilloscope. You can see a demo of Nanoscope running Oscillofun: [https://youtu.be/ZQVlYfUenzs](https://youtu.be/ZQVlYfUenzs).
 
 ## Features
 
@@ -95,5 +95,5 @@ Nanoscope is a Python-based Oscilloscope front end. It supports streaming data f
 ## Performance and Limitations
 
 * The `analogRead()` API on Arduino Nano has a hard limit of approximately 10,000 samples per second. This means that Nanoscope provides acceptable performance when measuring frequencies below about 1kHZ.
-* The `analogRead()` API on Arduino Nano does not understand negative voltage. You can use a small capacitor (i.e.: 1uf) between what you are measuring and the A0 pin for a basic adjustment, or a [voltage divider circuit]([url](https://forum.arduino.cc/t/how-to-read-data-from-audio-jack/458301/3)) for a more stable and accurate version.
+* The `analogRead()` API on Arduino Nano does not understand negative voltage. You can use a small capacitor (i.e.: 1uf) between what you are measuring and the A0 pin for a basic adjustment, or a [voltage divider circuit](https://forum.arduino.cc/t/how-to-read-data-from-audio-jack/458301/3) for a more stable and accurate version.
 * Nanoscope supports dual channels mode if you plug in two devices. Nanoscope makes every attempt to synchronize these data streams, but expect about a millisecond of error in the timing between these two channels.
